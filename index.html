@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <nav class="container mx-auto py-6 border-b-2 px-5">
+        <div class="flex items-center justify-between">
+            <div class="p-3 rounded-md">
+                <img class="w-24 md:w-full" src="./images/Logo.png" alt="">
+            </div>
+            <div class="">
+                <button id="sort-btn"
+                    class="btn btn-ghost hover:bg-slate-200 bg-slate-100 font-semibold md:text-xl text-sm text-slate-800 h-14 rounded-md">Sort
+                    By View
+                </button>
+            </div>
+            <div>
+                <button class="bg-red-500 text-sm md:text-xl text-white px-2 md:px-6 py-2 md:py-3 rounded-md">Blog</button>
+            </div>
+        </div>
+    </nav>
+    <section class="flex justify-center items-center mt-12">
+        <div id="btn-container" class="*:m-1 *:text-sm *:md:text-lg md*:m-3">
+        </div>
+    </section>
+
+    <section class="my-12 px-5">
+        <div id="error-element" class="hidden mt-24">
+            <img class="mx-auto" src="./images/error-icon.svg" alt="">
+            <h1 class="text-3xl mt-3 text-slate-600 text-center">Opps!! There are No data For This Category</h1>
+        </div>
+        <div id="card-container" class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
